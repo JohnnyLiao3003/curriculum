@@ -1,0 +1,316 @@
+:root {
+    --color-principal: #2F3A45;
+    --color-secundario: #68717A;
+    --color-claro: #E8EAED;
+    --color-linea: #D5D8DC;
+    --color-fondo-header: #F5F6F7;
+}
+
+
+body.oscuro {
+
+    --color-principal: #E5E7EB;
+    --color-secundario: #B8C0CC;
+    --color-claro: #374151;
+    --color-linea: #4B5563;
+    --color-fondo-header: #1F2933;
+    background-color: #111827;
+
+}
+
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    background-color: #FFFFFF;
+    color: var(--color-principal);
+}
+
+
+header {
+    background-color: var(--color-fondo-header);
+    padding: 25px 40px;
+    text-align: center;
+}
+
+
+.nombre {
+    font-size: 40px;
+    font-weight: 700;
+    margin: 0 0 8px 0;
+    color: var(--color-principal);
+    letter-spacing: -0.5px;
+}
+
+
+.nombre-contenedor {
+    display: inline-block;
+}
+
+
+.nombre-contenedor::after {
+    content: "";
+    display: block;
+    width: 160px;
+    height: 2px;
+    background-color: var(--color-principal);
+    margin: 10px auto 0;
+}
+
+
+.perfil {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0;
+}
+
+
+.formacion {
+    font-size: 16px;
+    margin-top: 6px;
+    color: var(--color-secundario);
+}
+
+
+.contacto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 15px;
+    flex-wrap: wrap;
+}
+
+
+.contacto p {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--color-secundario);
+    white-space:nowrap;
+}
+
+
+.contacto a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+.contacto a:hover {
+    text-decoration: underline;
+}
+
+
+.cv {
+    max-width: 900px;
+    margin: auto;
+}
+
+
+.experiencia-item {
+    margin-top: 15px;
+}
+
+
+.experiencia-item h3 {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+
+.puesto {
+    color: var(--color-principal);
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+}
+
+
+.lista-funciones {
+    margin: 8px 0 0 20px;
+    padding: 0;
+}
+
+.lista-funciones li {
+    margin-bottom: 6px;
+    color: var(--color-secundario);
+    line-height: 1.5;
+}
+
+
+.fecha {
+    color: var(--color-secundario);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.educacion-item {
+    margin-top: 15px;
+}
+
+
+.educacion-item h3 {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+
+.bloque-tecnologia h3::before,
+.experiencia-item h3::before,
+.educacion-item h3::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    background-color: var(--color-principal);
+    border-radius: 2px;
+    margin-right: 10px;
+    flex-shrink: 0;
+}
+
+
+.titulo-estudio {
+    font-size: 16px;
+    margin: 0;
+}
+
+
+.bloque-tecnologia {
+    margin-top: 15px;
+}
+
+
+.bloque-tecnologia h3 {
+    margin-bottom: 10px;
+    font-size: 17px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+
+
+.etiquetas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+
+.etiquetas span {
+    background-color: var(--color-claro);
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 13px;
+    color: var(--color-principal);
+}
+
+
+.idioma {
+    display: flex;
+    justify-content: space-between;
+    max-width: 350px;
+    margin-bottom: 10px;
+}
+
+
+.idioma h3 {
+    font-size: 16px;
+    margin: 0;
+}
+
+
+.idioma p {
+    color: var(--color-secundario);
+    margin: 0;
+}
+
+
+.certificado {
+    margin-top: 15px;
+}
+
+
+.certificado h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+
+.certificado-info {
+    color: var(--color-secundario);
+    font-size: 14px;
+    margin: 0;
+}
+
+
+.seccion {
+    border-left: 3px solid var(--color-linea);
+    padding: 12px 40px 12px 25px;
+}
+
+
+.seccion h2 {
+    position: relative;
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--color-principal);
+    border-bottom: 1px solid var(--color-linea);
+    padding-bottom: 10px;
+    margin-bottom:18px;
+    letter-spacing: 0.5px;
+}
+
+
+.seccion h2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    width: 100%;
+    height: 2px;
+
+    background: linear-gradient(
+        to right,
+        var(--color-principal) 0 60px,
+        var(--color-linea) 60px 100%
+    );
+}
+
+
+p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.acciones button {
+
+    border: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: var(--color-principal);
+    color: var(--color-fondo-header);
+    font-weight: 500;
+
+}
+
+
+.acciones button:hover {
+
+    opacity: 0.8;
+
+}
+
+
+@media print {
+
+    .acciones {
+        display: none;
+    }
+
+}
