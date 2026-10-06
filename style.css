@@ -314,3 +314,23 @@ p {
     }
 
 }
+
+
+.linkedin {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+
+.linkedin-qr {
+    width: 45px;
+    height: 45px;
+    display: block;
+    border-radius: 4px;
+}
+
+
+.linkedin-qr:hover {
+    opacity: 0.8;
+}
